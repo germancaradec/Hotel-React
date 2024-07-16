@@ -8,8 +8,12 @@ import BarraNav from './components/barraNav/BarraNav';
 import ListarConsulta from './components/consulta/ListarConsulta';
 import FormConsulta from './components/consulta/FormConsulta';
 
+
+
+
 import './index.css';
 import "bootstrap/dist/css/bootstrap.min.css";
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

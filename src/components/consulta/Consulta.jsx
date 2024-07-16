@@ -15,9 +15,9 @@ const ItemConsulta = ({consulta, listaConsul})=>{
         }
 
     return(
-        <div className="col-md-4 mb-4">
+        <div className="col-md-4 mb-4 ">
             <div className="card card-body">
-                <h3 className="card-title"> {consulta.nombre} {consulta.apellido} 
+                <h3 className="card-title"> {consulta.apellido} {consulta.nombre}
                     <button onClick={()=>navigate(`/modificarConsulta/${consulta.id}`)}
                     className="ms-2 btn btn-sm btn-info">Modificar</button></h3>
                 <p className="card-text"> 
@@ -29,6 +29,7 @@ const ItemConsulta = ({consulta, listaConsul})=>{
                 <button onClick={() => consulta.id && handleDelete(consulta.id)} className="btn btn-danger my-2">
                     Eliminar consulta
                 </button>
+                <button className="btn btn-secondary my-2">Agregar a lista: atendiendo...</button>
             </div>
 
         </div>

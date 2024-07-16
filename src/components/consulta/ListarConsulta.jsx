@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 // Componentes
-import ItemConsulta from "./ItemConsulta";
+import Consulta from "./Consulta";
 
 import * as ServidorConsultas from './ServidorConsultas'
 
@@ -25,8 +25,8 @@ const ListarConsulta = () => {
 
     return(
         <div className="row">
-            {consultas.map((consulta)=>(
-                <ItemConsulta key={consulta.id} consulta={consulta} listaConsul={listaConsul}/>
+            {consultas.slice(0, 9).map((consulta)=>(
+                <Consulta key={consulta.id} consulta={consulta} listaConsul={listaConsul}/>
             ))}
         </div>
     )

@@ -83,11 +83,11 @@ const FormConsulta = () => {
                 <div className="d-grid gap-2">
                 {params.id ? (
                         <button type="submit" className="btn btn-block btn-primary">
-                        Update
+                        Modificar
                         </button>
                     ) : (
                         <button type="submit" className="btn btn-block btn-success">
-                        Register
+                        Registrar
                         </button>
                     )}
                 </div>
