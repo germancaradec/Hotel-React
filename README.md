@@ -64,18 +64,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
+- controlar formulario como busqueda de peliculas. 
+
+
 - ✅ Muestra una lista de consultas a partir del fetch
-- [x] Añade un filtro por apellido
-- [x] Añade un filtro por nombre
-- [x] Añade cantidad de concultas por consulta(a resolver)
+- ✅ Añade un filtro por apellido
+- ✅ Añade un filtro por nombre
 - [x] Corregir en back tipo de dato telefono
 
 Haz uso de useContext para evitar pasar props innecesarias.
 
 Lista de consultas resueltas:
 
-- [x] Haz que se puedan añadir las consultas a una lista.
-- [x] Haz que se puedan eliminar las consultas de la lista.
-- [x] Haz que se puedan modificar la cantidad de consultas por consulta, en la lista.
-- [x] Sincroniza los cambios de la lista con las consultas restantes.
-- [x] Guarda en un localStorage la lista para que se recupere al recargar la página. (da puntos)
+- [x] Haz que se puedan añadir las consultas a una lista procesando.
+- [x] Haz que se puedan eliminar las consultas de la lista procesando.
+- [x] Sincroniza los cambios de la lista procesando con las consultas restantes (diferente boton).
+- [x] Guarda en un localStorage la lista procesando, para que se recupere al recargar la página. 
