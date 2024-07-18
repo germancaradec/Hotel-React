@@ -25,7 +25,7 @@ const ListarConsulta = () => {
 
     return(
         <div className="row">
-            {consultas.slice(0, 9).map((consulta)=>(
+            {consultas.map((consulta)=>(
                 <Consulta key={consulta.id} consulta={consulta} listaConsul={listaConsul}/>
             ))}
         </div>

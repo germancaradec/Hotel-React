@@ -29,7 +29,6 @@ const ItemConsulta = ({consulta, listaConsul})=>{
                 <button onClick={() => consulta.id && handleDelete(consulta.id)} className="btn btn-danger my-2">
                     Eliminar consulta
                 </button>
-                <button className="btn btn-secondary my-2">Agregar a lista: atendiendo...</button>
             </div>
 
         </div>
