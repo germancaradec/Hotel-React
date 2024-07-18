@@ -5,6 +5,9 @@ import { Header } from './components/Header.jsx';
 import { useFiltros } from './hooks/useFiltros.js';
 import { Lista } from './components/Lista.jsx';
 import { ProveedorLista } from './context/contextoLista.jsx';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import BarraNav from './components/barraNav/BarraNav';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
     const { consultas, obtenerConsultas } = useConsultas();
@@ -13,11 +16,14 @@ function App() {
     const consultasFiltradas = filtrarConsultas(consultas);
 
     return (
-        <ProveedorLista>
-            <Header />
-            <Lista />
-            <Consultas consultas={consultasFiltradas} listaConsul={obtenerConsultas} />
-        </ProveedorLista>
+        <BrowserRouter>
+            <BarraNav/>
+            <ProveedorLista className='container my-4'>
+                <Header />
+                <Lista />
+                <Consultas consultas={consultasFiltradas} listaConsul={obtenerConsultas} />
+            </ProveedorLista>
+        </BrowserRouter>
     );
 }
 
