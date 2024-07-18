@@ -1,0 +1,56 @@
+.consultas {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .consultas ul {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(
+        200px,
+        1fr
+      )
+    );
+    gap: 1rem;
+  }
+  
+  .consulta {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, .1);
+    border-radius: 4px;
+    background: #111;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  .consulta strong {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .consulta button {
+    border: none;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+  }
+  
+  .consulta .btn-danger {
+    background-color: red;
+  }
+  
+  .consulta .btn {
+    background-color: grey;
+  }
+  
+  .consulta .btn.my-2 {
+    margin-top: 1rem;
+  }
+  

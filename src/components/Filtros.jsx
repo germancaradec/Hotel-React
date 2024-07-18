@@ -1,5 +1,6 @@
 import { useId } from 'react';
 import { useFiltros } from '../hooks/useFiltros.js';
+import './Filtros.css';
 
 
 export function FiltrosConsultas() {

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import { ContextoFiltros } from './context/contextoFiltros.jsx'
+import { ProveedorFiltros } from './context/contextoFiltros.jsx'
 
 import App from './app';
 
@@ -13,9 +13,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <ContextoFiltros>
+  <ProveedorFiltros>
     <App/>
-  </ContextoFiltros>
+  </ProveedorFiltros>
 );
 
 // If you want to start measuring performance in your app, pass a function

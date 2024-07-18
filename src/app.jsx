@@ -1,25 +1,24 @@
-import { products as initialProducts } from './mocks/products.json'
-import { Products } from './components/Products.jsx'
-import { Header } from './components/Header.jsx'
-import { Footer } from './components/Footer.jsx'
-import { IS_DEVELOPMENT } from './config.js'
-import { useFilters } from './hooks/useFilters.js'
-import { Cart } from './components/Cart.jsx'
-import { CartProvider } from './context/cart.jsx'
+import React from 'react';
+import useConsultas from './hooks/useConsultas';
+import { Consultas } from './components/Consultas.jsx';
+import { Header } from './components/Header.jsx';
+import { useFiltros } from './hooks/useFiltros.js';
+import { Lista } from './components/Lista.jsx';
+import { ProveedorLista } from './context/contextoLista.jsx';
 
-function App () {
-    const { filterProducts } = useFilters()
+function App() {
+    const { consultas, obtenerConsultas } = useConsultas();
+    const { filtrarConsultas } = useFiltros();
 
-    const filteredProducts = filterProducts(initialProducts)
+    const consultasFiltradas = filtrarConsultas(consultas);
 
     return (
-        <CartProvider>
+        <ProveedorLista>
             <Header />
-            <Cart />
-            <Products products={filteredProducts} />
-            {IS_DEVELOPMENT && <Footer />}
-        </CartProvider>
-    )
+            <Lista />
+            <Consultas consultas={consultasFiltradas} listaConsul={obtenerConsultas} />
+        </ProveedorLista>
+    );
 }
 
-export default App
+export default App;
