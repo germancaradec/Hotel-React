@@ -2,31 +2,26 @@ import { useId } from 'react'
 import { useLista } from '../hooks/useLista.js'
 import './Lista.css';
 
-function ConsultaItem ({ apellido, nombre, telefono, texto, agregarEnLista, cantidad }) {
+
+function ConsultaItem ({ id, apellido, nombre,  texto, quitarDeLista, consulta  }) {
     return (
         <li>
         <div>
-            <strong>{apellido} {nombre}</strong>
-        </div>
-        <div>
-            <small>Teléfono: {telefono}</small>
-        </div>
-        <div>
             <small>{texto}</small>
         </div>
-        <footer>
-            <small>
-            Cantidad: {cantidad}
-            </small>
-            <button onClick={agregarEnLista}>+</button>
-        </footer>
+        <div>
+            <strong>{apellido} {nombre}</strong>
+        </div>
+        <button onClick={() => quitarDeLista(consulta)}>Quitar de lista</button>
+
         </li>
     )
 }
 
 export function Lista () {
     const listaCheckboxId = useId()
-    const { lista, limpiarLista, agregarEnLista } = useLista()
+    const { lista, limpiarLista, agregarEnLista, quitarDeLista } = useLista()
+    
 
     return (
         <>
@@ -40,7 +35,10 @@ export function Lista () {
             {lista.map(consulta => (
                 <ConsultaItem
                 key={consulta.id}
+                id={consulta.id}
                 agregarEnLista={() => agregarEnLista(consulta)}
+                consulta = {consulta}
+                quitarDeLista={quitarDeLista}
                 {...consulta}
                 />
             ))}

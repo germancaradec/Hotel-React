@@ -73,7 +73,7 @@ const FormConsulta = () => {
                 <div className="mb-3">
                     <label className="form-label">Telefono</label>
                     <input type="number" name="telefono" value={consulta.telefono} onChange={handleInputChange}
-                    className="form-control" maxLength="8" required />
+                    className="form-control" required />
                 </div>
                 <div className="mb-3">
                     <label className="form-label">Consulta</label>
