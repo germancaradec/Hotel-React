@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Se trata de una aplicación web desarrollada en React que permite gestionar,en principio, las consultas del hotel, consultando una API desarrollada con Django. La aplicación ofrece funcionalidades para listar, agregar, modificar y eliminar consultas, aplicando filtros y manteniendo el estado en la interfaz de usuario sincronizado con el almacenamiento local (localStorage).
+Se trata de una aplicación web desarrollada en React que permite gestionar, en principio, las consultas del hotel, consultando una API desarrollada con Django. La aplicación ofrece funcionalidades para listar, agregar, modificar y eliminar consultas, aplicando filtros y manteniendo el estado en la interfaz de usuario sincronizado con el almacenamiento local (localStorage).
 
 
 ## Funcionalidades
