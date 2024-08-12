@@ -1,8 +1,8 @@
-# React Consultas App
+# React App
 
 ## Descripción
 
-La React Consultas App es una aplicación web desarrollada en React que permite gestionar consultas mediante una API desarrollada con Django. La aplicación ofrece funcionalidades para listar, agregar, modificar y eliminar consultas, aplicando filtros y manteniendo el estado en la interfaz de usuario sincronizado con el almacenamiento local (localStorage).
+App es una aplicación web desarrollada en React que permite gestionar,en principio, las consultas del hotel, consultando una API desarrollada con Django. La aplicación ofrece funcionalidades para listar, agregar, modificar y eliminar consultas, aplicando filtros y manteniendo el estado en la interfaz de usuario sincronizado con el almacenamiento local (localStorage).
 
 
 ## Funcionalidades
@@ -37,6 +37,7 @@ Persistencia en localStorage: La lista de consultas procesadas se guarda en loca
 React Router: Utiliza BrowserRouter y Routes para gestionar la navegación entre diferentes vistas de la aplicación (listar consultas, formulario de nueva consulta, etc.).
 
 Fetch API: Se utiliza para realizar solicitudes HTTP a la API de Django, manejando operaciones CRUD (Crear, Leer, Actualizar, Eliminar) para las consultas.
+
 
 ## Instalación y Ejecución
 
