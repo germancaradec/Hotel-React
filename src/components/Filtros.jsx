@@ -26,7 +26,7 @@ export function FiltrosConsultas() {
     return (
         <section className='filtros'>
         <div>
-            <label htmlFor={apellidoFiltroId}>Filtrar por Apellido:</label>
+            <label htmlFor={apellidoFiltroId}>Buscar por Apellido:</label>
             <input
             type='text'
             id={apellidoFiltroId}
@@ -36,7 +36,7 @@ export function FiltrosConsultas() {
         </div>
 
         <div>
-            <label htmlFor={nombreFiltroId}>Filtrar por Nombre:</label>
+            <label htmlFor={nombreFiltroId}>Buscar por Nombre:</label>
             <input
             type='text'
             id={nombreFiltroId}

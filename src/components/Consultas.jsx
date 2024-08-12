@@ -5,6 +5,7 @@ import './Consultas.css';
 import { useNavigate } from 'react-router-dom'
 import { Header } from './Header.jsx';
 
+
 export function Consultas({ consultas, listaConsul }) {
     const { agregarEnLista, quitarDeLista, lista } = useLista();
     const navigate = useNavigate()
@@ -22,42 +23,39 @@ export function Consultas({ consultas, listaConsul }) {
     return (
         <main className="consultas">
             <div>
-
             <Header />
             <ul>
-                {Array.isArray(consultas) && consultas.slice(0, 9).map(consulta => {
+                {Array.isArray(consultas) && consultas.slice(0, 18).map(consulta => {
                     const consultaEnLista = checkConsultaEnLista(consulta);
                     
                     return (
                             <li key={consulta.id} className="consulta">
                                 <div>
-                                    <strong>Apellido:</strong> {consulta.apellido}
+                                    <span>Apellido:</span> {consulta.apellido}
                                 </div>
                                 <div>
-                                    <strong>Nombre:</strong> {consulta.nombre}
+                                    <span>Nombre:</span> {consulta.nombre}
                                 </div>
                                 <div>
-                                    <strong>Teléfono:</strong> {consulta.telefono}
+                                    <span>Teléfono:</span> {consulta.telefono}
                                 </div>
                                 <div>
-                                    <strong>Texto:</strong> {consulta.texto}
+                                    <span>Texto:</span> {consulta.texto}
                                 </div>
-                                
-                                <button onClick={()=>navigate(`/modificarConsulta/${consulta.id}`)}
-                                        className="ms-2 btn btn-sm btn-warning">Modificar
-                                </button>
-                                
-                                
                                 <button
                                     onClick={() => {
                                         consultaEnLista ? quitarDeLista(consulta) : agregarEnLista(consulta);
                                     }}
-                                    className="btn my-2 btn-info"
+                                    className={consultaEnLista ? "btn btn-outline-secondary" : "btn btn-outline-primary"}
                                 >
                                     {consultaEnLista ? 'No procesar' : 'Procesar'}
                                 </button>
+
+                                <button onClick={()=>navigate(`/modificarConsulta/${consulta.id}`)}
+                                    className="btn btn-sm btn-warning">Modificar
+                                    </button>
                                 
-                                <button onClick={() => consulta.id && handleDelete(consulta.id)} className="btn btn-danger my-2">
+                                <button onClick={() => consulta.id && handleDelete(consulta.id)} className="btn btn-outline-danger">
                                     Eliminar consulta
                                 </button>
                             </li>

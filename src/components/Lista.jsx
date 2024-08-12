@@ -26,7 +26,7 @@ export function Lista () {
     return (
         <>
         <label className='lista-button' htmlFor={listaCheckboxId}>
-            Lista
+            Procesando...
         </label>
         <input id={listaCheckboxId} type='checkbox' hidden />
 
@@ -45,7 +45,7 @@ export function Lista () {
             </ul>
 
             <button onClick={limpiarLista} className="btn btn-danger my-2">
-            Limpiar Lista
+            Vaciar lista procesadas
             </button>
         </aside>
         </>

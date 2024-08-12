@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 150px;
   }
   
   .consultas ul {
@@ -10,7 +11,7 @@
     grid-template-columns: repeat(
       auto-fit,
       minmax(
-        200px,
+        250px,
         1fr
       )
     );
@@ -21,9 +22,7 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    box-shadow: 0 0 10px 10px rgba(0, 0, 0, .1);
-    border-radius: 4px;
-    background: #111;
+    background: rgba(33, 37, 41, 1);
     color: #fff;
     padding: 1rem;
   }

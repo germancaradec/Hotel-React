@@ -11,12 +11,11 @@ const BarraNav=()=>{
             <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
                 <li className="nav-item">
-                <Link className="nav-link" to="/">Listar consultas</Link>
+                <Link className="nav-link" to="/">Lista de consultas</Link>
                 </li>
                 <li className="nav-item">
                 <Link className="nav-link" to="/formConsulta">Nueva consulta</Link>
                 </li>
-                {/* <a className="nav-link" href="http://127.0.0.1:8000/login/">Administración</a> */}
             </ul>
             </div>
         </div>
