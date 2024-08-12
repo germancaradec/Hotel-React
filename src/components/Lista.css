@@ -1,0 +1,74 @@
+.lista-button {
+  align-items: center;
+  background: #09f;
+  border-radius: 4px;
+  min-height: 3rem;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease;
+
+}
+
+.lista-button:hover {
+  background-color: #0070e0; /* Cambia el color al pasar el mouse */
+}
+
+.lista-button ~ input:checked ~ .lista {
+  display: block;
+}
+
+.lista {
+  background: #000;
+  color: #fff;
+  display: none;
+  padding: 32px;
+  position: fixed;
+  right: 0;
+  top: 0px;
+  width: 300px;
+  z-index: 999;
+  overflow-y: auto;
+  max-height: calc(100vh - 32px); /* Ajusta la altura máxima del panel */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.lista ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista li {
+  border-bottom: 1px solid #444;
+  color: #fff;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+
+.lista li:last-child {
+  border-bottom: none; /* Elimina el borde del último item */
+}
+
+.lista footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.lista footer button {
+  padding: 8px 16px;
+  background-color: #09f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.lista footer button:hover {
+  background-color: #0070e0; /* Cambia el color al pasar el mouse */
+}
