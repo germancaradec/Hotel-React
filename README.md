@@ -25,10 +25,12 @@ Navegación con React Router: Usa react-router-dom para manejar la navegación e
 ## Conceptos
 
 Context API: Utilizada para manejar el estado global de los filtros y la lista de consultas procesadas, evitando la necesidad de pasar propiedades a través de múltiples niveles de componentes.
+Implementación de Context API para la gestión del estado global y evitar la prop drilling.
 
 Hooks: Se utilizan hooks personalizados (useConsultas, useFiltros, useLista) para manejar la lógica de negocios y la interacción con la API.
 
-Filtros: Los filtros permiten a los usuarios buscar consultas específicas por nombre y apellido. Los filtros se aplican en tiempo real mientras el usuario escribe en los campos de búsqueda.
+Filtros: Los filtros permiten a los usuarios buscar consultas específicas por nombre y apellido. Los filtros se aplican en tiempo real usando el estado global del contexto, mientras el usuario escribe en los campos de búsqueda.
+
 
 Persistencia en localStorage: La lista de consultas procesadas se guarda en localStorage para asegurar que los datos se mantengan entre sesiones de usuario.
 
@@ -55,15 +57,3 @@ npm install
 npm start
 
 5 Abre tu navegador y visita http://localhost:3000.
-
-## Conocimientos Adquiridos y Aplicados
-
-Uso de Context API: Implementación de Context API para la gestión del estado global y evitar la prop drilling.
-
-Manejo de Filtros: Aplicación de filtros en tiempo real usando el estado global del contexto.
-
-Persistencia en localStorage: Sincronización del estado con localStorage para mantener la información entre sesiones.
-
-React Router: Implementación de la navegación entre vistas usando react-router-dom.
-
-Consumo de API: Uso de la Fetch API para interactuar con un backend Django y realizar operaciones CRUD.
