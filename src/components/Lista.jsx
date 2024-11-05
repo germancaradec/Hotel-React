@@ -26,7 +26,7 @@ export function Lista () {
     return (
         <>
         <label className='lista-button' htmlFor={listaCheckboxId}>
-            Procesando...
+            Ver consultas en proceso
         </label>
         <input id={listaCheckboxId} type='checkbox' hidden />
 

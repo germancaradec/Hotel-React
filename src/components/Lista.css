@@ -27,11 +27,11 @@
   padding: 32px;
   position: fixed;
   right: 0;
-  top: 0px;
+  top: 180px;
   width: 300px;
   z-index: 999;
   overflow-y: auto;
-  max-height: calc(100vh - 32px); /* Ajusta la altura máxima del panel */
+  max-height: calc(100vh - 180px); /* Ajusta la altura máxima del panel */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Sombra suave */
 }
 

@@ -40,7 +40,7 @@ export function Consultas({ consultas, listaConsul }) {
                                     <span>Teléfono:</span> {consulta.telefono}
                                 </div>
                                 <div>
-                                    <span>Texto:</span> {consulta.texto}
+                                    <span>Consulta:</span> {consulta.texto}
                                 </div>
                                 <button
                                     onClick={() => {

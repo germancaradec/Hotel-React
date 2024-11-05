@@ -12,10 +12,10 @@
     align-items: center;
     padding: 0.5rem;
     position: fixed;
-    left: 130px;
+    left: 0px;
     top: 80px;
     width: 100vw;
     z-index: 99;
-    background: white;
+    background: #848181;
 }
 
